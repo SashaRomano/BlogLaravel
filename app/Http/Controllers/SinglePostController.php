@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\NewPost;
+use App\Post;
 use Illuminate\Http\Request;
 
 class SinglePostController extends Controller
 {
     public function __invoke($id){
-        $new_post = NewPost::where('id', '=', $id)->first();
+        $post = Post::where('id', '=', $id)->first();
 
-        return view('single_post', ['new_post'=>$new_post]);
+        return view('single_post', ['post'=>$post]);
     }
 }

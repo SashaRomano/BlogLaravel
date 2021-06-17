@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Author extends Model
 {
-    public function new_posts(){
+    public function posts(){
         return $this->hasMany(Post::class);
     }
 }

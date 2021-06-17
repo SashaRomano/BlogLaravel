@@ -24,7 +24,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="{{route('start')}}">Super Blog</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -56,8 +57,8 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-            @yield('content')
-            <!-- Pagination -->
+        @yield('content')
+        <!-- Pagination -->
             <ul class="pagination justify-content-center mb-4">
                 <li class="page-item">
                     <a class="page-link" href="#">&larr; Older</a>
@@ -92,29 +93,16 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">Web Design</a>
-                                </li>
-                                <li>
-                                    <a href="#">HTML</a>
-                                </li>
-                                <li>
-                                    <a href="#">Freebies</a>
-                                </li>
+                                @inject('categories', '\App\Category')
+                                @foreach($categories->show_categories() as $category)
+                                    <li>
+                                        <a href="{{route('posts_by_category',$category->key)}}">{{$category->title}}</a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">JavaScript</a>
-                                </li>
-                                <li>
-                                    <a href="#">CSS</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorials</a>
-                                </li>
-                            </ul>
+
                         </div>
                     </div>
                 </div>
@@ -122,9 +110,23 @@
 
             <!-- Side Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Side Widget</h5>
+                <h5 class="card-header">Nets</h5>
                 <div class="card-body">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                @inject('nets', '\App\Net')
+                                @foreach($nets->show_nets() as $net)
+                                    <li>
+                                        <a href="{{$net->url}}">{{$net->name}}</a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+
+                        </div>
+                    </div>
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title',$author->name)
+@section('title',$category->title)
 
 
 
@@ -8,10 +8,10 @@
 
     <div class="container">
 
-        <h1 class="my-4">All posts by
-            <small>{{$author->name}}</small>
+        <h1 class="my-4">All posts by category
+            <small>{{$category->title}}</small>
         </h1>
-    @foreach($author->posts as $post)
+    @foreach($category->post as $post)
         <!-- Blog Post -->
             <div class="card mb-4">
                 <img class="card-img-top" src="{{$post->img}}" alt="Card image cap">
@@ -31,9 +31,11 @@
                 </div>
 
 
+
             </div>
         @endforeach
     </div>
 
 @endsection
+
 

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\NewPost;
 use App\Post;
 use Illuminate\Http\Request;
 
@@ -11,8 +10,8 @@ class startController extends Controller
     public function __invoke()
     {
 
-        $new_posts = NewPost::all();
+        $posts = Post::orderBy('id', 'DESC')->limit(3)->get();
 
-        return view('home',['new_post'=>$new_posts]);
+        return view('home',['post'=>$posts]);
     }
 }

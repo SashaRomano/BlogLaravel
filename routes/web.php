@@ -24,3 +24,7 @@ Route::get('/contacts', 'simplePageController@contacts')->name('cont');
 Route::get('/author/{key}', PostsByAuthorController::class)->name('posts_by_author');
 
 Route::get('/new_post/{id}', SinglePostController::class)->name('single_post');
+
+Route::get('/category/{key}', PostsByCategoryController::class)->name('posts_by_category');
+
+

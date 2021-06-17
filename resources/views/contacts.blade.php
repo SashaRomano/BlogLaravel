@@ -12,13 +12,13 @@
             <div class="col-md-8">
 
                 <h1 class="my-4">Our Contacts</h1>
-
-                <small>
-                    +380670077700 <br>
-                    +380503377733 <br>
-                    super.blog@gmail.com
-                </small>
-
+                <div class="row">
+                    <ul>
+                    @foreach($contacts as $contact)
+                        <li> {{$contact->title}} : {{$contact->value}} </li>
+                    @endforeach
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
