@@ -12,6 +12,6 @@ class startController extends Controller
 
         $posts = Post::orderBy('id', 'DESC')->limit(3)->get();
 
-        return view('home',['post'=>$posts]);
+        return view('start',['post'=>$posts]);
     }
 }

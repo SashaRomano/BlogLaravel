@@ -21,6 +21,27 @@
                 <a href="{{route('posts_by_author', $post->author->key)}}">{{$post->author->name}}</a>
             </div>
 
+            @if(Auth::check())
+                <hr>
+                @if(count($comments) == 0) <p>No comments yet</p>@endif
+                @foreach($comments as $comment)
+                    Author: <strong>{{$comment->author}}</strong><br>
+                {{$comment->comment}}
+                Added: {{$comment->created_at}}
+                @endforeach
+                <form action="save_comment" method="post">
+                    @csrf
+                    <h2>Add comment</h2>
+                    <input type="hidden" name="post_id" value="{{$post->id}}">
+                    <input type="hidden" name="author" value="{{Auth::user()->name}}">
+                    <textarea class="form-control" name="comment"></textarea>
+                    <br>
+                    <button class="btn btn-primary">Add comment</button>
+                    @else
+                        <p>Log in to add and see comments</p>
+                </form>
+            @endif
+
 
         </div>
 
