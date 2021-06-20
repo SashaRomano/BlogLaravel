@@ -44,10 +44,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('cont')}}">Contact</a>
                 </li>
+                @if(\Illuminate\Support\Facades\Auth::check())
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('delete_post_get')}}">Administrate posts</a>
+                    </li>
+                @endif
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('home')}}">@if(\Illuminate\Support\Facades\Auth::check()) {{\Illuminate\Support\Facades\Auth::user()->name}}
+                    <a class="nav-link"
+                       href="{{route('home')}}">@if(\Illuminate\Support\Facades\Auth::check())
+                            {{\Illuminate\Support\Facades\Auth::user()->name}}
                         @else
-                        Log in
+                            Log in
                         @endif
                     </a>
                 </li>
@@ -64,16 +71,7 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-        @yield('content')
-        <!-- Pagination -->
-            <ul class="pagination justify-content-center mb-4">
-                <li class="page-item">
-                    <a class="page-link" href="#">&larr; Older</a>
-                </li>
-                <li class="page-item disabled">
-                    <a class="page-link" href="#">Newer &rarr;</a>
-                </li>
-            </ul>
+            @yield('content')
 
         </div>
 

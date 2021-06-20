@@ -20,6 +20,11 @@
                 <br>
                 <a href="{{route('posts_by_author', $post->author->key)}}">{{$post->author->name}}</a>
             </div>
+            <div class="card-footer text-muted">
+                @foreach($post->category as $category)
+                    <a href="{{route('posts_by_category',$category->key)}}">{{$category->title}}</a>
+                @endforeach
+            </div>
 
             @if(Auth::check())
                 <hr>

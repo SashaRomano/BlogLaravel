@@ -29,6 +29,25 @@ Route::post('/post/{id}', SaveCommentController::class)->name('save_comment');
 
 Route::get('/category/{key}', PostsByCategoryController::class)->name('posts_by_category');
 
+// Admin
+Route::get('/admin/add_post', 'AdminPostController@add')->name('add_post_get');
+
+Route::post('/admin/add_post', 'AdminPostController@save')->name('add_post_post');
+
+Route::get('/admin/edit_post/{id}', 'AdminPostController@edit')->name('edit_post_get');
+
+Route::post('/admin/edit_post/{id}', 'AdminPostController@edit_save')->name('edit_post_post');
+
+Route::get('/admin/admin_post', 'AdminPostController@delete')->name('delete_post_get');
+
+Route::delete('/admin/admin_post', 'AdminPostController@delete')->name('delete_post_post');
+
+Route::get('404', function (){
+    return view('404');
+})->name('404');
+
+// Authorisation
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

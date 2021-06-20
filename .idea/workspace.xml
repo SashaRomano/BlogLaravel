@@ -20,23 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0c9ff2-34e7-4f75-aa23-52055ae9406f" name="Default Changelist" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/af245d2d-d34c-49aa-a09a-0ca8786bf765.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/af245d2d-d34c-49aa-a09a-0ca8786bf765.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/example-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/example-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/admin_add_post.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/admin_post.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/edit_post.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SinglePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SinglePostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/startController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/startController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/start.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts_by_author.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts_by_author.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts_by_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts_by_category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/single_post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single_post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/start.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/start.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,6 +203,8 @@
       <workItem from="1623809412557" duration="21087000" />
       <workItem from="1623921892744" duration="6871000" />
       <workItem from="1623997502881" duration="10106000" />
+      <workItem from="1624072860259" duration="3732000" />
+      <workItem from="1624090488697" duration="14850000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1623770155159</created>
@@ -268,10 +260,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="263" height="571" key="HiddenNamespacesPopup/0.0.1920.1032@0.0.1920.1032" timestamp="1623358587956" />
-    <state x="749" y="419" key="NewPhpFileDialog" timestamp="1623865720859">
+    <state x="749" y="419" key="NewPhpFileDialog" timestamp="1624154304152">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="749" y="419" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1623865720859" />
+    <state x="749" y="419" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1624154304152" />
     <state x="707" y="287" width="506" height="456" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1623829509562">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
