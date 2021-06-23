@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 use App\Author;
 use App\Category;
 use App\Post;
@@ -42,6 +44,14 @@ class AdminPostController extends Controller
             $post->save();
             $post->category()->sync($request->input('category_id'), false);
             $post->category()->getRelated();
+
+            $log = new Logger('new');
+            $log->pushHandler(new StreamHandler(__DIR__ . '/../../Logs/new_posts_monolog.log', Logger::INFO));
+            $log->info(Auth::user()->name . ' added post №' . $post->id . ' : ' . $post->post_title);
+
+            $logger = new \Katzgrau\KLogger\Logger(__DIR__ . '/../../Logs');
+            $logger->info( Auth::user()->name . ' added post №' . $post->id . ' : ' . $post->post_title);
+
             return redirect()->route('single_post', $post->id);
         } else {
             return redirect()->route('start');
@@ -81,6 +91,14 @@ class AdminPostController extends Controller
                 }
             }
             $post->save();
+
+            $log = new Logger('new');
+            $log->pushHandler(new StreamHandler(__DIR__ . '/../../Logs/edited_posts_monolog.log', Logger::INFO));
+            $log->info(Auth::user()->name . ' edited post №' . $post->id . ' : ' . $post->post_title);
+
+            $logger = new \Katzgrau\KLogger\Logger(__DIR__ . '/../../Logs');
+            $logger->info( Auth::user()->name . ' edited post №' . $post->id . ' : ' . $post->post_title);
+
             return redirect()->route('single_post', $post->id);
         } else {
             return redirect()->route('start');
@@ -91,6 +109,14 @@ class AdminPostController extends Controller
         if($request->method() == 'DELETE'){
             $post = Post::find($request->input('id'));
             $post->delete();
+
+            $log = new Logger('new');
+            $log->pushHandler(new StreamHandler(__DIR__ . '/../../Logs/deleted_posts_monolog.log', Logger::INFO));
+            $log->info(Auth::user()->name . ' deleted post №' . $post->id . ' : ' . $post->post_title);
+
+            $logger = new \Katzgrau\KLogger\Logger(__DIR__ . '/../../Logs');
+            $logger->info( Auth::user()->name . ' deleted post №' . $post->id . ' : ' . $post->post_title);
+
             return back();
         }else{
             return view ('Admin.admin_post', ['posts'=>Post::all()]);

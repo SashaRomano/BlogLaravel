@@ -25,6 +25,9 @@
                     <a href="{{route('posts_by_category',$category->key)}}">{{$category->title}}</a>
                 @endforeach
             </div>
+            <div class="card-footer text-muted">
+                <p>This post was read by {{$post->read}} users</p>
+            </div>
 
             @if(Auth::check())
                 <hr>

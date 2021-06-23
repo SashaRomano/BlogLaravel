@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,10 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0c9ff2-34e7-4f75-aa23-52055ae9406f" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/app/Currency.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/example-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/example-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_14_081724_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_14_081724_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/single_post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single_post.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +157,7 @@
       <path value="$PROJECT_DIR$/vendor/bootstrap/js" />
       <path value="$PROJECT_DIR$/vendor/bootstrap/css" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/katzgrau/klogger" />
     </include_path>
   </component>
   <component name="ProjectId" id="1tl6jI7LvJ48OhcqNy5zwlSxVGK" />
@@ -165,13 +174,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\open_server_5_3_7_basic\OpenServer\domains\example-app\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\open_server_5_3_7_basic\OpenServer\domains\example-app\public" />
       <recent name="D:\open_server_5_3_7_basic\OpenServer\domains\example-app\vendor" />
       <recent name="D:\open_server_5_3_7_basic\OpenServer\domains\example-app\public\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\open_server_5_3_7_basic\OpenServer\domains\example-app\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -201,7 +210,9 @@
       <workItem from="1623997502881" duration="10106000" />
       <workItem from="1624072860259" duration="3732000" />
       <workItem from="1624090488697" duration="15564000" />
-      <workItem from="1624283208185" duration="6366000" />
+      <workItem from="1624283208185" duration="6998000" />
+      <workItem from="1624427790016" duration="1225000" />
+      <workItem from="1624429035354" duration="6098000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1623770155159</created>
@@ -217,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624161205959</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit and push">
+      <created>1624361132301</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624361132301</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,22 +291,26 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="749" y="419" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1624154304152" />
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1624161207912">
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1624361136627">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1624161207912" />
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1624361136627" />
     <state x="707" y="287" width="506" height="456" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1623829509562">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="707" y="287" width="506" height="456" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1623829509562" />
-    <state x="764" y="227" width="583" height="577" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1623829520868">
+    <state x="764" y="227" width="583" height="577" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1624436320977">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="764" y="227" width="583" height="577" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1623829520868" />
+    <state x="764" y="227" width="583" height="577" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1624436320977" />
     <state x="531" y="227" key="run.anything.popup" timestamp="1623820315094">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="531" y="227" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1623820315094" />
+    <state x="539" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1624432454095">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="539" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1624432454095" />
     <state x="286" y="203" key="vcs.ApplyPatchDifferentiatedDialog" timestamp="1623652672744">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

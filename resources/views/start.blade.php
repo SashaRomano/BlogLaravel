@@ -29,6 +29,9 @@
                         <a href="{{route('posts_by_category',$cat->key)}}">{{$cat->title}}</a>
                     @endforeach
                 </div>
+                <div class="card-footer text-muted">
+                    <p>This post was read by {{$post->read}} users</p>
+                </div>
             </div>
         @endforeach
     </div>

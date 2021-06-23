@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->longText('post_text');
             $table->integer('author_id');
             $table->timestamps();
+            $table->integer('read')->default(0);
         });
     }
 
