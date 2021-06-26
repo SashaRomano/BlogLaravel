@@ -50,7 +50,7 @@ class AdminPostController extends Controller
             $log->info(Auth::user()->name . ' added post №' . $post->id . ' : ' . $post->post_title);
 
             $logger = new \Katzgrau\KLogger\Logger(__DIR__ . '/../../Logs');
-            $logger->info( Auth::user()->name . ' added post №' . $post->id . ' : ' . $post->post_title);
+            $logger->info(Auth::user()->name . ' added post №' . $post->id . ' : ' . $post->post_title);
 
             return redirect()->route('single_post', $post->id);
         } else {
@@ -63,7 +63,11 @@ class AdminPostController extends Controller
         if (Auth::check()) {
             $post = Post::where('id', '=', $id)->first();
             $authors = Author::all();
-            return view('Admin.edit_post', ['post' => $post, 'authors' => $authors]);
+            $categories = Category::all();
+            return view('Admin.edit_post', ['post' => $post,
+                'authors' => $authors,
+                'categories' => $categories
+            ]);
         } else {
             return redirect('404');
         }
@@ -91,13 +95,16 @@ class AdminPostController extends Controller
                 }
             }
             $post->save();
+            $post->category()->getRelated();
+            $post->category()->sync($request->input('category_id'));
+            $post->category()->getRelated();
 
             $log = new Logger('new');
             $log->pushHandler(new StreamHandler(__DIR__ . '/../../Logs/edited_posts_monolog.log', Logger::INFO));
             $log->info(Auth::user()->name . ' edited post №' . $post->id . ' : ' . $post->post_title);
 
             $logger = new \Katzgrau\KLogger\Logger(__DIR__ . '/../../Logs');
-            $logger->info( Auth::user()->name . ' edited post №' . $post->id . ' : ' . $post->post_title);
+            $logger->info(Auth::user()->name . ' edited post №' . $post->id . ' : ' . $post->post_title);
 
             return redirect()->route('single_post', $post->id);
         } else {
@@ -105,8 +112,9 @@ class AdminPostController extends Controller
         }
     }
 
-    public function delete(Request $request){
-        if($request->method() == 'DELETE'){
+    public function delete(Request $request)
+    {
+        if ($request->method() == 'DELETE') {
             $post = Post::find($request->input('id'));
             $post->delete();
 
@@ -115,11 +123,11 @@ class AdminPostController extends Controller
             $log->info(Auth::user()->name . ' deleted post №' . $post->id . ' : ' . $post->post_title);
 
             $logger = new \Katzgrau\KLogger\Logger(__DIR__ . '/../../Logs');
-            $logger->info( Auth::user()->name . ' deleted post №' . $post->id . ' : ' . $post->post_title);
+            $logger->info(Auth::user()->name . ' deleted post №' . $post->id . ' : ' . $post->post_title);
 
             return back();
-        }else{
-            return view ('Admin.admin_post', ['posts'=>Post::all()]);
+        } else {
+            return view('Admin.admin_post', ['posts' => Post::all()]);
         }
     }
 }

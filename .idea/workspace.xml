@@ -23,15 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0c9ff2-34e7-4f75-aa23-52055ae9406f" name="Default Changelist" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/example-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/example-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_14_081724_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_14_081724_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/single_post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single_post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Logs/edited_posts_monolog.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/Logs/edited_posts_monolog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/edit_post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/edit_post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,6 +210,7 @@
       <workItem from="1624283208185" duration="6998000" />
       <workItem from="1624427790016" duration="1225000" />
       <workItem from="1624429035354" duration="6098000" />
+      <workItem from="1624606188818" duration="13280000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1623770155159</created>

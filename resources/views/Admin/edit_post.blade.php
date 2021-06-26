@@ -24,13 +24,21 @@
         <hr>
         <form action="edit_post" method="post" enctype="multipart/form-data">
             @csrf
-            <strong>Choose author : </strong>
+            <strong>Edit author : </strong>
             <select name="author_id">
                 @foreach($authors as $author)
-                    <option @if($author->id == $post->author_id) selected @endif value="{{$author->id}}">{{$author->name}}</option>
+                    <option @if($author->id == $post->author_id) selected
+                            @endif value="{{$author->id}}">{{$author->name}}</option>
                 @endforeach
             </select>
-
+            <hr>
+            <strong>Edit category : </strong>
+            @foreach($categories as $category)
+                <div class="form-check">
+                    <input class="form-check-input" name="category_id" type="checkbox" value="{{$category->id}}">
+                    <label class="form-check-label" for="flexCheckDefault">{{$category->title}}</label>
+                </div>
+            @endforeach
             <hr>
             <input type="hidden" name="id" value="{{$post->id}}">
             <strong>Edit title : </strong>

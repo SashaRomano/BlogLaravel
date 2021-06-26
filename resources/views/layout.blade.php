@@ -113,6 +113,25 @@
 
             <!-- Side Widget -->
             <div class="card my-4">
+                <h5 class="card-header">Recommended Post</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            @inject('post', '\App\Post')
+                            @foreach($post->show_random_post() as $post)
+                                <a href="{{route('single_post', $post->id)}}">Post
+                                    № {{$post->id}}  {{$post->post_title}}</a>
+                            @endforeach
+                        </div>
+                        <div class="col-lg-6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Widget -->
+            <div class="card my-4">
                 <h5 class="card-header">Nets</h5>
                 <div class="card-body">
                     <div class="row">
