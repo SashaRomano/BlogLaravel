@@ -81,7 +81,7 @@
             <!-- Search Widget -->
             <div class="card my-4">
                 <h5 class="card-header">Currency</h5>
-                <div class="card-body">
+                <div class="card-body" style="background-color: #defde2;">
                     <ul class="">
                         @inject('currency','\App\Currency')
                         {{$currency->get_currency()}}
@@ -92,7 +92,7 @@
             <!-- Categories Widget -->
             <div class="card my-4">
                 <h5 class="card-header">Categories</h5>
-                <div class="card-body">
+                <div class="card-body" style="background-color: #defde2;">
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled mb-0">
@@ -114,7 +114,7 @@
             <!-- Side Widget -->
             <div class="card my-4">
                 <h5 class="card-header">Recommended Post</h5>
-                <div class="card-body">
+                <div class="card-body" style="background-color: #defde2;">
                     <div class="row">
                         <div class="col-lg-6">
                             @inject('post', '\App\Post')
@@ -133,7 +133,7 @@
             <!-- Side Widget -->
             <div class="card my-4">
                 <h5 class="card-header">Nets</h5>
-                <div class="card-body">
+                <div class="card-body" style="background-color: #defde2;">
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled mb-0">

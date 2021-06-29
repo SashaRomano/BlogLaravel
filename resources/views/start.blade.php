@@ -47,20 +47,20 @@
             </li>
         @endif
         @if($post->count > 1)
-            @for($count = 1; $count <= $post->lastPage(); $count++)
-                @if($count > $post->currentPage()-3 and $count < $post->currentPage+3)
-                    <li class="page-item @if($count == $post->currentPage()) active @endif">
+            @for($count = 1; $count <= $post->lastPage; $count++)
+                @if($count > $post->currentPage-3 and $count < $post->currentPage+3)
+                    <li class="page-item @if($count == $post->currentPage) active @endif">
                         <a href="?page={{$count}}"></a>
                     </li>
                 @endif
             @endfor
         @endif
         @if($post->currentPage != $post->lastPage)
-            <li>
-                <a href="{{$post->nextPageUrl()}}">&rarr;</a>
+            <li class="page-item active">
+                <a href="{{$post->nextPageUrl}}">&rarr;</a>
             </li>
-            <li>
-                <a href="?page={{$post->lastPage()}}">Last &rarr;&rarr;</a>
+            <li class="page-item active">
+                <a href="?page={{$post->lastPage}}">Last &rarr;&rarr;</a>
             </li>
         @endif
     </ul>
