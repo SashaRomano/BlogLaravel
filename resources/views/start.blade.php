@@ -19,6 +19,7 @@
                     <h2 class="card-title">{{$post->post_title}}</h2>
                     <p class="card-text">{{mb_substr($post->post_text,0,200)}}...</p>
                     <a href="{{route('single_post', $post->id)}}" class="btn btn-primary">Read More &rarr;</a>
+                    <a href="{{(route('add_to_cart', $post->id))}}" class="btn btn-outline-success">Add to cart</a>
                 </div>
                 <div class="card-footer text-muted">
                     Posted on {{$post->created_at}} by

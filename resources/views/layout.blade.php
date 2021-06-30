@@ -44,6 +44,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('cont')}}">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('cart')}}">Cart</a>
+                </li>
                 @if(\Illuminate\Support\Facades\Auth::check())
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('delete_post_get')}}">Administrate posts</a>

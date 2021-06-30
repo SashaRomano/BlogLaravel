@@ -22,7 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f0c9ff2-34e7-4f75-aa23-52055ae9406f" name="Default Changelist" comment="commit" />
+    <list default="true" id="4f0c9ff2-34e7-4f75-aa23-52055ae9406f" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/example-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/example-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_06_2021_11_23__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_06_2021_11_23__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Logs/deleted_posts_monolog.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/Logs/deleted_posts_monolog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Logs/new_posts_monolog.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/Logs/new_posts_monolog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/start.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/start.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,10 +57,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="cart" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -153,6 +171,7 @@
       <path value="$PROJECT_DIR$/vendor/bootstrap/css" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/katzgrau/klogger" />
+      <path value="$PROJECT_DIR$/vendor/darryldecode/cart" />
     </include_path>
   </component>
   <component name="ProjectId" id="1tl6jI7LvJ48OhcqNy5zwlSxVGK" />
@@ -210,6 +229,9 @@
       <workItem from="1624429035354" duration="6098000" />
       <workItem from="1624606188818" duration="15911000" />
       <workItem from="1624932700339" duration="4365000" />
+      <workItem from="1625043887400" duration="3759000" />
+      <workItem from="1625048870387" duration="1430000" />
+      <workItem from="1625056047194" duration="4010000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1623770155159</created>
@@ -246,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624695545102</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit and push">
+      <created>1624955295910</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624955295910</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,10 +303,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="551" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1623357639350" />
-    <state x="623" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623865291274">
+    <state x="623" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1625056414221">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1623865291274" />
+    <state x="623" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1625056414221" />
     <state x="91" y="91" width="1738" height="850" key="DiffContextDialog" timestamp="1624952103175">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -302,14 +331,14 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="608" y="179" key="NewPhpClassDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1624283261814" />
-    <state x="749" y="419" key="NewPhpFileDialog" timestamp="1624154304152">
+    <state x="749" y="419" key="NewPhpFileDialog" timestamp="1625057083824">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="749" y="419" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1624154304152" />
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1624955233776">
+    <state x="749" y="419" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1625057083824" />
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1625065851349">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1624955233776" />
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1625065851349" />
     <state x="707" y="287" width="506" height="456" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1623829509562">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -318,14 +347,14 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="764" y="227" width="583" height="577" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1624436320977" />
-    <state x="531" y="227" key="run.anything.popup" timestamp="1623820315094">
+    <state x="531" y="227" key="run.anything.popup" timestamp="1625043958024">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="531" y="227" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1623820315094" />
-    <state x="539" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1624432454095">
+    <state x="531" y="227" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1625043958024" />
+    <state x="539" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1625056112796">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="539" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1624432454095" />
+    <state x="539" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1625056112796" />
     <state x="286" y="203" key="vcs.ApplyPatchDifferentiatedDialog" timestamp="1623652672744">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

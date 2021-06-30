@@ -54,3 +54,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/logout', 'HomeController@logout')->name('logout');
 
+// Cart
+
+Route::get('/cart/add_to_cart/{id}', 'CartController@add')->name('add_to_cart');
+
+Route::get('/cart', 'CartController@show')->name('cart');
+
+Route::get('/cart/delete/{id}', 'CartController@delete')->name('delete_from_cart');
