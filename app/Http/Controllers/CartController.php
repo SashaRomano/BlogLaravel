@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
-    public function add($id){
+    public function add($id)
+    {
 
         $post = Post::find($id);
 
@@ -24,12 +25,28 @@ class CartController extends Controller
         return back();
     }
 
-    public function show(){
+    public function show()
+    {
         return view('cart');
     }
 
-    public function delete($id){
+    public function delete($id)
+    {
         \Cart::remove($id);
+        return back();
+    }
+
+    public function update(Request $request)
+    {
+        foreach ($request->post() ['items'] as $id => $quantity) {
+            \Cart::update($id, [
+                    'quantity' => [
+                        'relative' => false,
+                        'value' => $quantity
+                    ]
+                ]
+            );
+        }
         return back();
     }
 }

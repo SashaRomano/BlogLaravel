@@ -42,7 +42,7 @@ Route::get('/admin/admin_post', 'AdminPostController@delete')->name('delete_post
 
 Route::delete('/admin/admin_post', 'AdminPostController@delete')->name('delete_post_post');
 
-Route::get('404', function (){
+Route::get('404', function () {
     return view('404');
 })->name('404');
 
@@ -61,3 +61,13 @@ Route::get('/cart/add_to_cart/{id}', 'CartController@add')->name('add_to_cart');
 Route::get('/cart', 'CartController@show')->name('cart');
 
 Route::get('/cart/delete/{id}', 'CartController@delete')->name('delete_from_cart');
+
+Route::post('/cart/checkout', OrderController::class)->name('checkout');
+
+Route::get('/cart/checkout', function () {
+    return view('checkout');
+})->name('checkout');
+
+Route::get('/order/{id}', OrderReceivedController::class)->name('order');
+
+Route::post('/cart/update', 'CartController@update')->name('update_cart');

@@ -84,12 +84,12 @@
             <!-- Search Widget -->
             <div class="card my-4">
                 <h5 class="card-header">Currency</h5>
-                <div class="card-body" style="background-color: #defde2;">
-                    <ul class="">
-                        @inject('currency','\App\Currency')
-                        {{$currency->get_currency()}}
-                    </ul>
-                </div>
+{{--                <div class="card-body" style="background-color: #defde2;">--}}
+{{--                    <ul class="">--}}
+{{--                        @inject('currency','\App\Currency')--}}
+{{--                        {{$currency->get_currency()}}--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
             </div>
 
             <!-- Categories Widget -->
